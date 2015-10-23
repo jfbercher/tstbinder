@@ -20,7 +20,9 @@ USER main
 #RUN jupyter nbextension install https://rawgit.com/jfbercher/small_nbextensions/master/interactive_sols.zip  --user
 #RUN jupyter nbextension enable usability/interactive_sols/interactive_sols 
 
+ADD requirements.txt requirements.txt
+
 # Install requirements for Python 3
-RUN pip3 install -r requirements.txt
+RUN /home/main/anaconda/envs/python3/bin/pip install -r requirements.txt
 
 
