@@ -10,7 +10,9 @@ RUN apt-get update
 
 RUN conda update --all
 RUN conda install jupyter
+RUN pip install ipykernel
 RUN /home/main/anaconda/envs/python3/bin/pip install jupyter --upgrade
+RUN /home/main/anaconda/envs/python3/bin/pip install ipykernel --upgrade
 
 USER main
 
