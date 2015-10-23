@@ -7,7 +7,9 @@ USER root
 # Add Julia dependencies
 RUN apt-get update
 #RUN apt-get install -y julia libnettle4 && apt-get clean
-RUN /home/main/anaconda/envs/python3/bin/pip install jupyter --upgrade
+#RUN /home/main/anaconda/envs/python3/bin/pip install jupyter --upgrade
+RUN conda install jupyter
+
 
 USER main
 
