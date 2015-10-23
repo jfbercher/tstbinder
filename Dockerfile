@@ -13,8 +13,8 @@ USER main
 
 
 # Install my custom extensions
-#RUN jupyter nbextension install https://rawgit.com/jfbercher/latex_envs/master/latex_envs.zip  --user
-#RUN jupyter nbextension enable latex_envs/latex_envs  
+RUN jupyter nbextension install https://rawgit.com/jfbercher/latex_envs/master/latex_envs.zip  --user
+RUN jupyter nbextension enable latex_envs/latex_envs  
 #RUN jupyter nbextension install https://rawgit.com/jfbercher/small_nbextensions/master/highlighter.zip --user
 #RUN jupyter nbextension enable usability/highlighter/highlighter 
 #RUN jupyter nbextension install https://rawgit.com/jfbercher/small_nbextensions/master/interactive_sols.zip  --user
