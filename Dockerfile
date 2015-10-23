@@ -12,6 +12,7 @@ RUN conda install jupyter
 
 
 USER main
+RUN conda install jupyter
 
 # Install my custom extensions
 #RUN jupyter nbextension install https://rawgit.com/jfbercher/latex_envs/master/latex_envs.zip  --user
