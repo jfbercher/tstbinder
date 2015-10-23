@@ -7,10 +7,9 @@ USER root
 # Add Julia dependencies
 RUN apt-get update
 #RUN apt-get install -y julia libnettle4 && apt-get clean
+RUN /home/main/anaconda/envs/python3/bin/pip install jupyter --upgrade
 
 USER main
-
-
 
 # Install my custom extensions
 #RUN jupyter nbextension install https://rawgit.com/jfbercher/latex_envs/master/latex_envs.zip  --user
